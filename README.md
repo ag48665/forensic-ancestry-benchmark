@@ -80,3 +80,21 @@ superpopulations.
 
 
 
+\### SNP Dropout Experiment
+
+
+
+Random Forest classification accuracy was evaluated under simulated SNP dropout.
+
+
+
+Accuracy remained relatively stable across dropout levels from 0% to 75%, ranging from 21.6% to 23.4%.
+
+
+
+!\[Figure 2](../results/figures/figure2\_dropout\_accuracy.png)
+
+
+
+Figure 2. Effect of SNP dropout on ancestry classification accuracy.
+
