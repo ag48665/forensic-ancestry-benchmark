@@ -40,3 +40,43 @@ Planned methods:
 
 \- Kidd Lab 55 AISNP panel
 
+
+
+
+
+\## Results
+
+
+
+The rs2814778 variant showed strong population stratification across the
+
+1000 Genomes reference panel.
+
+
+
+The C allele frequency was highest in African populations (96.4%),
+
+intermediate in admixed American populations (7.8%), and nearly absent in
+
+European (0.6%), East Asian (0%), and South Asian (0%) populations.
+
+
+
+These findings are consistent with previously reported distributions of the
+
+Duffy-null allele and confirm the validity of the benchmark dataset.
+
+
+
+!\[Figure 1](../results/figures/figure1\_rs2814778\_frequency.png)
+
+
+
+Figure 1. Frequency of the rs2814778 C allele across 1000 Genomes
+
+superpopulations.
+
+
+
+
+
