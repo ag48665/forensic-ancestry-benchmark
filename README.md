@@ -6,43 +6,37 @@ Benchmarking machine learning and population genetics methods for forensic ances
 
 
 
-\## Objectives
+\## Aim
 
 
 
-\- Evaluate ancestry prediction robustness under SNP dropout.
-
-\- Compare population genetics and machine learning approaches.
-
-\- Benchmark PCA, Random Forest, and XGBoost.
-
-\- Use ancestry-informative markers (AIMs).
-
-\- Simulate forensic DNA degradation.
+This project evaluates how SNP dropout affects forensic ancestry prediction using ancestry-informative SNP profiles.
 
 
 
-\## Data Sources
+\## Methods
+
+
+
+Planned methods:
+
+
+
+\- PCA + nearest centroid
+
+\- Random Forest
+
+\- XGBoost
+
+\- simulated SNP dropout
+
+
+
+\## Data
 
 
 
 \- 1000 Genomes Project
 
-\- Forensic AIM SNP panels
-
-
-
-\## Repository Structure
-
-
-
-data/
-
-metadata/
-
-scripts/
-
-results/
-
-manuscript/
+\- Kidd Lab 55 AISNP panel
 
