@@ -57,6 +57,36 @@ A Random Forest classifier was trained to predict continental superpopulation me
 
 ## Results
 
+## Results
+
+### Population Structure
+
+All five ancestry-informative SNPs demonstrated substantial population differentiation across the 1000 Genomes reference populations.
+
+The rs2814778 variant showed strong enrichment in African populations, whereas rs3827760 was highly enriched in East Asian populations.
+
+European populations were characterized by elevated frequencies of rs16891982 and rs12913832 alternative alleles.
+
+These observations were consistent with previously reported population genetics studies and confirm the ancestry informativeness of the selected markers.
+
+### Machine Learning Benchmark
+
+A Random Forest classifier was trained using five ancestry-informative SNPs.
+
+The model achieved an overall classification accuracy of 90.6%.
+
+Performance was highest for African populations (F1 = 0.98), followed by European (0.95), East Asian (0.93), and South Asian populations (0.91).
+
+The lowest performance was observed for Admixed American populations (F1 = 0.63), reflecting their complex ancestry composition.
+
+### SNP Dropout Experiment
+
+To evaluate robustness under degraded forensic DNA conditions, ancestry classification was repeated after progressively reducing the number of available SNPs.
+
+Classification accuracy decreased from 89.6% with five SNPs to 46.3% with a single marker.
+
+A substantial reduction in performance was observed when fewer than three markers were available, indicating that a minimum panel of several ancestry-informative SNPs is required for reliable continental ancestry prediction.
+
 ### Population Stratification
 
 All five AISNPs demonstrated substantial differences in genotype frequencies across continental populations.
