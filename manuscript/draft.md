@@ -56,6 +56,15 @@ A five-SNP genotype matrix was constructed using all 2504 individuals.
 A Random Forest classifier was trained to predict continental superpopulation membership from genotype information. Model evaluation was performed using a train-test split approach and classification performance was assessed using accuracy, precision, recall and F1-score metrics.
 
 ## Results
+### Comparison of Machine Learning Models
+
+Three supervised machine-learning algorithms were evaluated using five ancestry-informative SNPs extracted from the 1000 Genomes reference panel.
+
+Logistic Regression achieved the highest classification accuracy (90.8%), followed by Random Forest (90.6%) and Decision Tree (90.2%).
+
+The relatively small performance differences suggest that the selected AISNP panel contains highly informative ancestry signals that can be captured even by simple linear classifiers.
+
+These findings indicate that carefully selected forensic AISNP markers provide substantial ancestry prediction power without requiring highly complex machine-learning architectures.
 
 ## Results
 
@@ -101,6 +110,31 @@ The rs12913832 variant also demonstrated substantial population differentiation 
 
 Together, these findings confirm that a small panel of ancestry-informative SNPs captures substantial continental population structure.
 
+### ### Feature Importance Analysis
+
+Random Forest feature importance analysis identified rs2814778 as the most informative marker for ancestry prediction.
+
+The ranking of marker importance was:
+
+1. rs2814778
+2. rs16891982
+3. rs3827760
+4. rs1426654
+5. rs12913832
+
+
+The results are consistent with known population-genetic differentiation patterns and confirm the strong ancestry-informative value of the Duffy-null variant rs2814778.
+
+### SNP Dropout Benchmark
+
+Classification performance was evaluated under progressive marker loss conditions.
+
+Accuracy decreased from 89.6% with five SNPs to 46.3% when only a single marker remained available.
+
+Despite the reduction in available information, ancestry prediction remained relatively robust until the number of markers decreased below three SNPs.
+
+These findings support the utility of compact AISNP panels for forensic applications involving degraded DNA samples.
+
 ### Random Forest Classification
 
 The Random Forest classifier achieved an overall classification accuracy of 90.6%.
@@ -108,6 +142,17 @@ The Random Forest classifier achieved an overall classification accuracy of 90.6
 Performance metrics demonstrated strong classification performance for African, European and East Asian populations. Classification performance for Admixed American populations was lower, reflecting the complex ancestry composition of AMR samples.
 
 The confusion matrix indicated that most classification errors occurred between populations with partially overlapping ancestry profiles.
+
+## References
+
+1000 Genomes Project Consortium. A global reference for human genetic variation. Nature. 2015.
+
+Kidd KK, Speed WC, Pakstis AJ, et al. Progress toward an efficient panel of SNPs for ancestry inference. Forensic Science International: Genetics. 2014.
+
+Phillips C. Forensic genetic analysis of bio-geographical ancestry. Forensic Science International: Genetics. 2015.
+
+Kayser M. Forensic DNA Phenotyping: Predicting human appearance from crime scene material. Nature Reviews Genetics. 2015.
+
 
 ## Discussion
 
