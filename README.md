@@ -3,6 +3,13 @@
 Benchmarking forensic ancestry inference using ancestry-informative SNPs (AISNPs), population genetics, and machine learning approaches.
 
 ---
+# Forensic Ancestry Benchmark
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20634314.svg)](https://doi.org/10.5281/zenodo.20634314)
+
+Benchmarking machine learning and population genetics methods for forensic ancestry inference.
+
+---
 
 ## Overview
 
