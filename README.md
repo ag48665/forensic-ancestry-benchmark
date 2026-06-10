@@ -178,34 +178,6 @@ Despite this reduction in information, classification performance remained relat
 
 ---
 
-## Figures
-
-### Figure 1
-
-Population-specific genotype frequencies for the five AISNP markers.
-
-### Figure 2
-
-Principal Component Analysis (PCA) of five AISNPs across 2,504 individuals from the 1000 Genomes Project.
-
-### Figure 3
-
-Random Forest confusion matrix.
-
-### Figure 4
-
-Classification accuracy under progressive SNP dropout conditions.
-
-### Figure 5
-
-Random Forest feature importance scores for five AISNP markers.
-
-### Figure 6
-
-Comparison of machine-learning classifier performance.
-
----
-
 ## Repository Structure
 
 ```text
