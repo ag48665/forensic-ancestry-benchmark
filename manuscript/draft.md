@@ -2,10 +2,21 @@
 # Benchmarking Forensic Ancestry Inference Using Five Ancestry-Informative SNPs from the 1000 Genomes Project
 
 ## Abstract
+Forensic ancestry inference is increasingly used to generate investigative leads from biological evidence when conventional DNA profiling cannot identify an individual.
+
+This study evaluates the utility of five ancestry-informative single nucleotide polymorphisms (AISNPs) extracted from the 1000 Genomes Project Phase 3 reference dataset comprising 2,504 individuals from five continental superpopulations (AFR, AMR, EAS, EUR and SAS).
+
+Population-genetic analyses demonstrated substantial genotype frequency differences among continental groups. Principal Component Analysis revealed clear population clustering based on only five AISNPs.
+
+Three machine-learning classifiers were evaluated for ancestry prediction. Logistic Regression achieved the highest classification accuracy (90.8%), followed by Random Forest (90.6%) and Decision Tree (90.2%).
+
+Feature importance analysis identified rs2814778 as the most informative marker. SNP dropout benchmarking demonstrated a gradual decline in classification performance as markers were removed, with accuracy decreasing from 89.6% using five SNPs to 46.3% using a single SNP.
+
+The results demonstrate that a compact panel of carefully selected AISNPs captures substantial continental population structure and supports robust forensic ancestry inference under simulated degraded DNA conditions.
+
 
 Forensic ancestry inference is increasingly used to generate investigative leads from biological evidence when conventional DNA profiling is insufficient. Ancestry-informative single nucleotide polymorphisms (AISNPs) provide information about continental population structure and can support forensic intelligence applications. In this study, five well-characterized AISNPs (rs2814778, rs3827760, rs1426654, rs16891982 and rs12913832) were extracted from the 1000 Genomes Project Phase 3 reference dataset comprising 2504 individuals from five continental superpopulations: African (AFR), Admixed American (AMR), East Asian (EAS), European (EUR) and South Asian (SAS). Population-specific genotype distributions were evaluated and a Random Forest classifier was trained using the five-marker panel. The classifier achieved an overall accuracy of 90.6% for superpopulation assignment. Strong population differentiation was observed for all five markers, confirming their utility as ancestry-informative loci. These findings demonstrate that even a small AISNP panel captures substantial continental population structure and provides a useful benchmark for forensic ancestry inference research.
 
-## Introduction
 
 Forensic ancestry inference aims to estimate the biogeographical ancestry of an unknown DNA sample using population-specific genetic variation. Unlike conventional forensic DNA profiling, which focuses on individual identification, ancestry inference seeks to identify the population origins of a biological sample and may provide valuable investigative intelligence.
 
@@ -67,6 +78,27 @@ The relatively small performance differences suggest that the selected AISNP pan
 These findings indicate that carefully selected forensic AISNP markers provide substantial ancestry prediction power without requiring highly complex machine-learning architectures.
 
 ## Results
+### Figures
+
+Figure 1. Genotype distribution of rs2814778.
+
+Figure 2. Genotype distribution of rs3827760.
+
+Figure 3. Genotype distribution of rs1426654.
+
+Figure 4. Genotype distribution of rs16891982.
+
+Figure 5. Genotype distribution of rs12913832.
+
+Figure 6. Principal Component Analysis of five AISNPs.
+
+Figure 7. Random Forest confusion matrix.
+
+Figure 8. SNP dropout benchmark.
+
+Figure 9. Random Forest feature importance.
+
+Figure 10. Comparison of machine-learning models.
 
 ### Population Structure
 
