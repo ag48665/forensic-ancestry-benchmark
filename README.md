@@ -1,100 +1,127 @@
-\# Forensic Ancestry Benchmark
+# Forensic Ancestry Benchmark
 
+Benchmarking ancestry inference from forensic SNP profiles using population genetics and machine learning approaches.
 
+## Overview
 
-Benchmarking machine learning and population genetics methods for forensic ancestry inference from degraded SNP profiles.
+This project investigates the performance of ancestry-informative SNPs (AISNPs) for forensic ancestry inference using data from the 1000 Genomes Project.
 
+The benchmark focuses on:
 
+* Population differentiation of individual AISNP markers
+* Genotype frequency distributions across continental populations
+* Effects of SNP dropout on ancestry prediction
+* Robustness of ancestry inference under degraded forensic DNA conditions
 
-\## Aim
+## Dataset
 
+### Reference Population Dataset
 
+Source:
 
-This project evaluates how SNP dropout affects forensic ancestry prediction using ancestry-informative SNP profiles.
+* 1000 Genomes Project Phase 3
 
+Superpopulations:
 
+* AFR — African
+* AMR — Admixed American
+* EAS — East Asian
+* EUR — European
+* SAS — South Asian
 
-\## Methods
+Total individuals:
 
+* 2504 reference samples
 
+### Ancestry Informative Markers
 
-Planned methods:
+The current benchmark includes:
 
+| SNP        | Gene / Region | Forensic relevance           |
+| ---------- | ------------- | ---------------------------- |
+| rs2814778  | ACKR1 (Duffy) | African ancestry marker      |
+| rs3827760  | EDAR          | East Asian ancestry marker   |
+| rs1426654  | SLC24A5       | European pigmentation marker |
+| rs16891982 | SLC45A2       | European pigmentation marker |
+| rs12913832 | HERC2/OCA2    | Eye pigmentation marker      |
 
+## Workflow
 
-\- PCA + nearest centroid
+1. Download and validate 1000 Genomes metadata
+2. Extract target SNPs from chromosome VCF files
+3. Generate genotype tables
+4. Merge genotypes with population metadata
+5. Calculate population genotype frequencies
+6. Visualize genotype distributions
+7. Evaluate ancestry classification robustness
 
-\- Random Forest
+## Results
 
-\- XGBoost
+### Population Stratification
 
-\- simulated SNP dropout
+All five AISNPs demonstrated substantial differences in genotype frequencies across continental populations.
 
+Examples:
 
+* rs2814778 strongly differentiates African populations
+* rs3827760 strongly differentiates East Asian populations
+* rs1426654 and rs16891982 show strong European enrichment
 
-\## Data
+### SNP Dropout Experiment
 
+Random Forest ancestry classification was evaluated under simulated SNP dropout conditions.
 
+Classification performance remained relatively stable across increasing dropout levels, demonstrating the challenges of ancestry prediction using limited marker sets.
 
-\- 1000 Genomes Project
+## Repository Structure
 
-\- Kidd Lab 55 AISNP panel
+data/
 
+metadata/
 
+results/
 
+scripts/
 
+manuscript/
 
-\## Results
+## Generated Outputs
 
+### Population Tables
 
+* rs2814778_by_population.tsv
+* rs3827760_by_population.tsv
+* rs1426654_by_population.tsv
+* rs16891982_by_population.tsv
+* rs12913832_by_population.tsv
 
-The rs2814778 variant showed strong population stratification across the
+### Summary Table
 
-1000 Genomes reference panel.
+* all_snp_population_genotype_counts.tsv
 
+### Figures
 
+* rs2814778.png
+* rs3827760.png
+* rs1426654.png
+* rs16891982.png
+* rs12913832.png
 
-The C allele frequency was highest in African populations (96.4%),
+## Future Work
 
-intermediate in admixed American populations (7.8%), and nearly absent in
+* Principal Component Analysis (PCA)
+* Random Forest ancestry classification
+* XGBoost ancestry classification
+* SNP dropout benchmarking
+* Comparison with published forensic AISNP panels
+* Validation using additional public datasets
 
-European (0.6%), East Asian (0%), and South Asian (0%) populations.
+## Author
 
+Agata Gabara
 
+Independent Research Project
 
-These findings are consistent with previously reported distributions of the
+## License
 
-Duffy-null allele and confirm the validity of the benchmark dataset.
-
-
-
-!\[Figure 1](../results/figures/figure1\_rs2814778\_frequency.png)
-
-
-
-Figure 1. Frequency of the rs2814778 C allele across 1000 Genomes
-
-superpopulations.
-
-
-
-
-
-\### SNP Dropout Experiment
-
-
-
-Random Forest classification accuracy was evaluated under simulated SNP dropout.
-
-
-
-Accuracy remained relatively stable across dropout levels from 0% to 75%, ranging from 21.6% to 23.4%.
-
-
-
-!\[Figure 2](../results/figures/figure2\_dropout\_accuracy.png)
-
-
-
-Figure 2. Effect of SNP dropout on ancestry classification accuracy.
-
+MIT License
