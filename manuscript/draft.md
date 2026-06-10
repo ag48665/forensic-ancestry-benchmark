@@ -157,6 +157,16 @@ The ranking of marker importance was:
 
 The results are consistent with known population-genetic differentiation patterns and confirm the strong ancestry-informative value of the Duffy-null variant rs2814778.
 
+### Machine Learning Model Comparison
+
+Three machine-learning classifiers were evaluated using five-fold cross-validation on the five-SNP AISNP panel.
+
+Logistic Regression achieved the highest mean classification accuracy (90.1% ± 0.4%), followed by Decision Tree (90.0% ± 0.6%) and Random Forest (89.8% ± 1.0%).
+
+The small differences between classifiers indicate that the ancestry signal captured by the AISNP panel is strong and largely independent of the specific classification algorithm.
+
+Interestingly, Logistic Regression slightly outperformed Random Forest, suggesting that ancestry differentiation across the five markers is primarily linearly separable at the continental level.
+
 ### SNP Dropout Benchmark
 
 Classification performance was evaluated under progressive marker loss conditions.
