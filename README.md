@@ -1,10 +1,12 @@
 # Forensic Ancestry Benchmark
 
-Benchmarking ancestry inference from forensic SNP profiles using population genetics and machine learning approaches.
+Benchmarking forensic ancestry inference using ancestry-informative SNPs (AISNPs), population genetics, and machine learning approaches.
+
+---
 
 ## Overview
 
-This project investigates the utility of ancestry-informative SNPs (AISNPs) for forensic ancestry inference using publicly available population-genetics datasets.
+This project investigates the utility of ancestry-informative SNPs (AISNPs) for forensic ancestry inference using publicly available population genetics datasets.
 
 The benchmark focuses on:
 
@@ -35,9 +37,11 @@ Total individuals:
 
 * 2504 reference samples
 
-### Ancestry Informative Markers
+---
 
-The current benchmark includes:
+### Ancestry Informative SNPs
+
+The current benchmark includes five widely studied AISNPs.
 
 | SNP | Gene / Region | Forensic relevance |
 |------|------|------|
@@ -55,20 +59,20 @@ The current benchmark includes:
 2. Extract target SNPs from chromosome VCF files
 3. Generate genotype tables
 4. Merge genotypes with population metadata
-5. Calculate population genotype frequencies
-6. Visualize genotype distributions
+5. Calculate genotype frequencies
+6. Visualize population distributions
 7. Evaluate ancestry classification robustness
 
 ---
 
 ## Key Findings
 
-* Five real AISNPs were extracted from the 1000 Genomes dataset.
-* All markers demonstrated substantial population stratification.
+* Five real AISNPs were extracted from the 1000 Genomes reference dataset.
+* All markers demonstrated substantial continental population stratification.
 * rs2814778 showed strong African specificity.
 * rs3827760 showed strong East Asian enrichment.
 * rs16891982 showed strong European enrichment.
-* Results support the feasibility of ancestry inference using small AISNP panels.
+* Multi-marker AISNP panels provide substantially greater ancestry information than individual loci.
 
 ---
 
@@ -76,17 +80,17 @@ The current benchmark includes:
 
 ### Population Distribution of Ancestry-Informative SNPs
 
-Five ancestry-informative SNPs were extracted from the 1000 Genomes Phase 3 dataset and evaluated across five continental superpopulations (AFR, AMR, EAS, EUR and SAS).
+Five ancestry-informative SNPs were extracted from the 1000 Genomes Phase 3 dataset and evaluated across five continental superpopulations (AFR, AMR, EAS, EUR, and SAS).
 
-The rs2814778 variant demonstrated strong African specificity. Homozygous alternative genotypes were observed predominantly in AFR individuals and were nearly absent in EUR, EAS and SAS populations.
+The rs2814778 variant demonstrated strong African specificity. Homozygous alternative genotypes were observed predominantly in AFR individuals and were nearly absent in EUR, EAS, and SAS populations.
 
-The rs3827760 marker showed strong enrichment of the alternative allele in East Asian populations.
+The rs3827760 marker showed strong enrichment of alternative genotypes in East Asian populations.
 
 The rs1426654 marker displayed substantial population differentiation across continental groups.
 
 The rs16891982 marker exhibited strong enrichment within European populations.
 
-The rs12913832 variant also showed substantial population differentiation, with elevated frequencies of alternative genotypes in European populations.
+The rs12913832 variant also showed marked population differentiation, with elevated frequencies of alternative genotypes in European populations.
 
 Together, these findings confirm that a small AISNP panel captures substantial continental population structure within the 1000 Genomes reference dataset.
 
@@ -141,50 +145,53 @@ metadata/
 results/
 scripts/
 manuscript/
-
 ```
 
 ---
 
 ## Generated Outputs
 
-Population Tables
-rs2814778_by_population.tsv
-rs3827760_by_population.tsv
-rs1426654_by_population.tsv
-rs16891982_by_population.tsv
-rs12913832_by_population.tsv
+### Population Tables
 
-## Summary Table
+* rs2814778_by_population.tsv
+* rs3827760_by_population.tsv
+* rs1426654_by_population.tsv
+* rs16891982_by_population.tsv
+* rs12913832_by_population.tsv
 
-all_snp_population_genotype_counts.tsv
+### Summary Table
 
+* all_snp_population_genotype_counts.tsv
 
-## Figures
+### Figures
 
-rs2814778.png
-rs3827760.png
-rs1426654.png
-rs16891982.png
-rs12913832.png
+* rs2814778.png
+* rs3827760.png
+* rs1426654.png
+* rs16891982.png
+* rs12913832.png
+
+---
 
 ## Future Work
 
-Principal Component Analysis (PCA)
-Random Forest ancestry classification
-XGBoost ancestry classification
-SNP dropout benchmarking
-Comparison with published forensic AISNP panels
-Validation using additional public datasets
+* Principal Component Analysis (PCA)
+* Random Forest ancestry classification
+* XGBoost ancestry classification
+* SNP dropout benchmarking
+* Comparison with published forensic AISNP panels
+* Validation using additional public datasets
 
+---
 
 ## Author
 
-Agata Gabara
+**Agata Gabara**
+
 Independent Researcher
+
+---
 
 ## License
 
 MIT License
-
-
