@@ -141,3 +141,47 @@ metadata/
 results/
 scripts/
 manuscript/
+
+
+## Generated Outputs
+
+Population Tables
+rs2814778_by_population.tsv
+rs3827760_by_population.tsv
+rs1426654_by_population.tsv
+rs16891982_by_population.tsv
+rs12913832_by_population.tsv
+
+## Summary Table
+
+all_snp_population_genotype_counts.tsv
+
+
+## Figures
+
+rs2814778.png
+rs3827760.png
+rs1426654.png
+rs16891982.png
+rs12913832.png
+
+## Future Work
+
+Principal Component Analysis (PCA)
+Random Forest ancestry classification
+XGBoost ancestry classification
+SNP dropout benchmarking
+Comparison with published forensic AISNP panels
+Validation using additional public datasets
+
+
+## Author
+
+Agata Gabara
+Independent Researcher
+
+## License
+
+MIT License
+
+
