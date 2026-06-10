@@ -142,6 +142,9 @@ results/
 scripts/
 manuscript/
 
+```
+
+---
 
 ## Generated Outputs
 
