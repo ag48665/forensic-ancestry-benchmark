@@ -20,7 +20,7 @@ df.to_csv(
     index=False
 )
 
-plt.figure(figsize=(7,4))
+plt.figure(figsize=(7, 4))
 
 plt.bar(
     df["model"],
@@ -29,11 +29,7 @@ plt.bar(
 
 plt.ylabel("Accuracy")
 plt.ylim(0.85, 0.95)
-
-plt.title(
-    "Classification Accuracy of Three Models\nUsing Five AISNPs"
-)
-
+plt.title("Classification Accuracy Using Five AISNPs")
 plt.tight_layout()
 
 plt.savefig(
@@ -42,3 +38,4 @@ plt.savefig(
 )
 
 print(df)
+print("saved results/plots/model_comparison.png")

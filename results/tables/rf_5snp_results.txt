@@ -1,0 +1,15 @@
+
+Accuracy: 0.9062
+
+              precision    recall  f1-score   support
+
+         AFR       0.96      0.99      0.98       132
+         AMR       0.76      0.54      0.63        69
+         EAS       0.89      0.97      0.93       101
+         EUR       0.92      0.97      0.95       101
+         SAS       0.90      0.92      0.91        98
+
+    accuracy                           0.91       501
+   macro avg       0.89      0.88      0.88       501
+weighted avg       0.90      0.91      0.90       501
+

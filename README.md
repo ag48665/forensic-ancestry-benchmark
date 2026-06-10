@@ -1,3 +1,4 @@
+
 # Forensic Ancestry Benchmark
 
 Benchmarking forensic ancestry inference using ancestry-informative SNPs (AISNPs), population genetics, and machine learning approaches.
@@ -75,6 +76,28 @@ The current benchmark includes five widely studied AISNPs.
 * Multi-marker AISNP panels provide substantially greater ancestry information than individual loci.
 
 ---
+### Principal Component Analysis
+
+Principal Component Analysis (PCA) was performed using genotypes from five ancestry-informative SNPs.
+
+The first principal component explained 52.7% of the total variance, while the second principal component explained 27.6%, accounting for 80.3% of the overall genetic variation.
+
+Distinct clustering patterns were observed across continental populations. African samples formed a separate cluster, whereas East Asian populations were primarily separated along the second principal component. European populations occupied a distinct region of the PCA space, while Admixed American populations displayed broader dispersion consistent with mixed continental ancestry.
+
+These findings demonstrate that even a small AISNP panel captures substantial population structure within the 1000 Genomes reference dataset.
+
+---
+### Feature Importance Analysis
+
+Random Forest feature importance analysis identified rs2814778 as the most informative marker for continental ancestry classification (importance = 0.315).
+
+The second and third most important markers were rs16891982 (0.226) and rs3827760 (0.216), both of which are known to exhibit substantial population differentiation between continental groups.
+
+The pigmentation-associated variants rs1426654 (0.172) and rs12913832 (0.072) contributed additional discriminatory information but showed lower importance scores.
+
+Overall, the importance ranking was consistent with established forensic genetics literature and reflected the known ancestry informativeness of these loci.
+
+---
 
 ## Results
 
@@ -118,6 +141,19 @@ Examples:
 * rs3827760 strongly differentiates East Asian populations.
 * rs16891982 shows strong European enrichment.
 * Multiple AISNPs provide complementary ancestry information.
+
+---
+### Support Vector Machine Performance
+
+A linear Support Vector Machine (SVM) classifier was evaluated using the same five ancestry-informative SNPs.
+
+The SVM model achieved the highest classification accuracy among all tested machine-learning approaches, reaching 91.2% accuracy on the held-out test dataset.
+
+Population-specific performance remained high for African, East Asian, European, and South Asian populations, while Admixed American populations showed reduced classification performance, consistent with previous analyses.
+
+The superior performance of the SVM classifier suggests that ancestry differentiation captured by the selected AISNP panel is largely linearly separable in feature space.
+
+These results demonstrate that even a minimal five-marker ancestry panel can provide robust continental ancestry prediction when combined with appropriate machine-learning algorithms.
 
 ---
 
@@ -172,7 +208,27 @@ manuscript/
 * rs12913832.png
 
 ---
+## Figure Captions
 
+Figure 1. Principal Component Analysis (PCA) of five ancestry-informative SNPs across 2504 individuals from the 1000 Genomes Project.
+
+Figure 2. Random Forest feature importance ranking for five ancestry-informative SNPs.
+
+Figure 3. Confusion matrix of Random Forest ancestry classification.
+
+Figure 4. Classification accuracy under progressive SNP dropout conditions.
+
+Figure 5. Genotype distribution of rs2814778 across continental populations.
+
+Figure 6. Genotype distribution of rs3827760 across continental populations.
+
+Figure 7. Genotype distribution of rs1426654 across continental populations.
+
+Figure 8. Genotype distribution of rs16891982 across continental populations.
+
+Figure 9. Genotype distribution of rs12913832 across continental populations.
+
+---
 ## Future Work
 
 * Principal Component Analysis (PCA)
@@ -182,6 +238,16 @@ manuscript/
 * Comparison with published forensic AISNP panels
 * Validation using additional public datasets
 
+---
+## References
+
+1000 Genomes Project Consortium. A global reference for human genetic variation. Nature. 2015.
+
+Kidd KK, Speed WC, Pakstis AJ et al. Progress toward an efficient panel of SNPs for ancestry inference. Forensic Science International: Genetics. 2014.
+
+Phillips C. Forensic genetic analysis of bio-geographical ancestry. Forensic Science International: Genetics. 2015.
+
+Jobling MA, Gill P. Encoded evidence: DNA in forensic analysis. Nature Reviews Genetics. 2004.
 ---
 
 ## Author
