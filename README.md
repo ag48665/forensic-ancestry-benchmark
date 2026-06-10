@@ -107,7 +107,20 @@ Progressive SNP dropout experiments were performed to evaluate classification ro
 10. Compare classifier performance
 
 ---
+## Reproducibility
 
+All analyses can be reproduced from the scripts contained in the repository.
+
+Main benchmark scripts:
+
+- scripts/26_rf_5snp.py
+- scripts/32_logistic_regression_5snp.py
+- scripts/33_decision_tree_5snp.py
+- scripts/37_svm_5snp.py
+- scripts/35_rf_cross_validation.py
+- scripts/36_cv_model_comparison.py
+
+---
 ## Results
 
 ### Population Differentiation
