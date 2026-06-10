@@ -98,6 +98,40 @@ The pigmentation-associated variants rs1426654 (0.172) and rs12913832 (0.072) co
 Overall, the importance ranking was consistent with established forensic genetics literature and reflected the known ancestry informativeness of these loci.
 
 ---
+## Figures
+
+Figure 1. Population-specific genotype frequencies for the five AISNP markers.
+
+Figure 2. Principal Component Analysis of five AISNP markers.
+
+Figure 3. Random Forest confusion matrix.
+
+Figure 4. Classification accuracy as a function of SNP dropout.
+
+Figure 5. Feature importance scores estimated by Random Forest.
+
+Figure 6. Comparison of machine-learning classifier performance.
+
+---
+## Tables
+
+Table 1. Summary of machine-learning classifier performance.
+
+| Model | Accuracy |
+|---------|---------:|
+| SVM | 91.2% |
+| Logistic Regression | 90.8% |
+| Random Forest | 90.6% |
+| Decision Tree | 90.2% |
+
+---
+## Limitations
+
+The present study evaluated only five ancestry-informative SNPs from the Kidd AISNP panel. Although high continental classification accuracy was achieved, additional markers would likely improve performance, particularly for admixed populations.
+
+Future work should evaluate the complete Kidd 55 AISNP panel and assess robustness under simulated DNA degradation scenarios representative of forensic casework.
+
+---
 
 ## Results
 
