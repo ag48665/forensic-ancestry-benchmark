@@ -272,6 +272,31 @@ Jobling MA, Gill P. *Encoded evidence: DNA in forensic analysis.* Nature Reviews
 
 ---
 
+## Citation
+
+If you use this repository, please cite:
+
+```text
+Gabara A. Forensic Ancestry Benchmark.
+Zenodo. 2026.
+https://doi.org/10.5281/zenodo.20634614
+```
+
+---
+
+## DOI
+
+Permanent archive:
+
+https://doi.org/10.5281/zenodo.20634614
+
+Zenodo record:
+
+https://zenodo.org/records/20634614
+
+---
+
+
 ## Author
 
 **Agata Gabara**
