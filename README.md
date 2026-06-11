@@ -231,9 +231,11 @@ manuscript/
 
 ## Limitations
 
-This study evaluated only five representative ancestry-informative SNPs. Although high continental classification accuracy was achieved, larger AISNP panels would likely improve performance, particularly for admixed populations and fine-scale ancestry inference.
+The benchmark panel currently contains 15 AIM SNPs.
 
-Additionally, the benchmark focused on continental ancestry classification and does not address subcontinental population structure.
+Seven SNPs were directly verified against 1000 Genomes VCF files.
+Additional SNP coordinates require harmonization between dbSNP builds and
+1000 Genomes Phase 3 reference coordinates before full validation.
 
 ---
 
