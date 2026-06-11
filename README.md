@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20634614.svg)](https://doi.org/10.5281/zenodo.20634614)
 
+[![DOI](https://zenodo.org/badge/DOI/XXXXX.svg)](https://doi.org/XXXXX)
+
 Benchmarking machine learning and population genetics methods for forensic ancestry inference.
 
 ---
