@@ -287,13 +287,13 @@ https://doi.org/10.5281/zenodo.20643550
 
 ## DOI
 
-Permanent archive:
+Current Zenodo record:
 
-https://doi.org/10.5281/zenodo.20634614
+https://doi.org/10.5281/zenodo.20643550
 
-Zenodo record:
+GitHub repository:
 
-https://zenodo.org/records/20634614
+https://github.com/ag48665/forensic-ancestry-benchmark
 
 ---
 
