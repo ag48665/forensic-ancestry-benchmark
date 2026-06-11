@@ -277,13 +277,12 @@ Jobling MA, Gill P. *Encoded evidence: DNA in forensic analysis.* Nature Reviews
 
 ## Citation
 
-If you use this repository, please cite:
+If you use this benchmark, please cite:
 
-```text
-Gabara A. Forensic Ancestry Benchmark.
-Zenodo. 2026.
-https://doi.org/10.5281/zenodo.20634614
-```
+Gabara, A. (2026).
+*Forensic Ancestry Benchmark: Verified 5-SNP benchmark against 1000 Genomes VCF files*.
+Zenodo.
+https://doi.org/10.5281/zenodo.20643550
 
 ---
 
