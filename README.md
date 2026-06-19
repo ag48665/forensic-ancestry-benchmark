@@ -21,6 +21,24 @@ The study investigates:
 The project serves as a proof-of-concept benchmark for forensic ancestry inference using a small set of highly informative genetic markers.
 
 ---
+## Project Highlights
+
+✔ Analysis of 2,504 individuals from the 1000 Genomes Project
+
+✔ Evaluation of ancestry-informative SNP markers
+
+✔ Principal Component Analysis of population structure
+
+✔ Comparison of four machine-learning classifiers
+
+✔ Feature importance analysis
+
+✔ SNP dropout robustness benchmarking
+
+✔ Reproducible genomic data analysis workflow
+
+---
+
 
 ## Dataset
 
@@ -166,6 +184,40 @@ The Support Vector Machine achieved the highest observed classification accuracy
 Classification performance was highest for African, East Asian, European, and South Asian populations, while Admixed American populations showed lower classification accuracy, consistent with their mixed ancestry composition.
 
 ---
+Skills Demonstrated
+
+Population Genetics
+Population structure analysis
+Ancestry-informative marker evaluation
+Allele and genotype frequency analysis
+Continental ancestry inference
+Forensic genetics workflows
+Machine Learning
+Random Forest
+Support Vector Machine (SVM)
+Logistic Regression
+Decision Tree Classification
+Model comparison and evaluation
+Feature importance analysis
+Cross-validation
+Bioinformatics
+VCF processing
+Genomic data analysis
+SNP extraction and filtering
+Principal Component Analysis (PCA)
+Population-scale dataset analysis
+Reproducible computational workflows
+
+---
+Key Takeaway
+
+Using only five verified ancestry-informative SNPs extracted directly from 1000 Genomes Phase 3 VCF files, machine-learning classifiers achieved approximately 91% continental ancestry classification accuracy.
+
+Despite the extremely small marker panel, PCA, genotype frequency analysis, and supervised machine-learning approaches consistently recovered major continental population structure.
+
+These results demonstrate that a minimal set of highly informative markers can provide robust ancestry inference and establish a benchmark framework for future forensic genetics and population genomics studies.
+
+---
 
 ### Feature Importance Analysis
 
@@ -231,11 +283,13 @@ manuscript/
 
 ## Limitations
 
-The benchmark panel currently contains 15 AIM SNPs.
+Several limitations should be considered:
 
-Seven SNPs were directly verified against 1000 Genomes VCF files.
-Additional SNP coordinates require harmonization between dbSNP builds and
-1000 Genomes Phase 3 reference coordinates before full validation.
+- The benchmark currently evaluates a minimal panel of five AISNPs.
+- Continental ancestry inference is assessed at a broad population level and does not capture fine-scale population structure.
+- Admixed populations remain more challenging to classify accurately.
+- Additional ancestry-informative markers are required for higher-resolution inference.
+- Validation on independent population datasets would further strengthen the findings.
 
 ---
 
