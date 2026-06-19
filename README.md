@@ -40,12 +40,21 @@ The project serves as a proof-of-concept benchmark for forensic ancestry inferen
 
 ---
 
-## Main Result
+## Main Findings
 
-![PCA Population Structure](results/plots/pca_population_structure.png)
+### Population differentiation at rs2814778
 
-Principal Component Analysis demonstrates clear separation of major continental populations using only five ancestry-informative SNPs.
+![Population Differentiation](results/figures/figure1_rs2814778_frequency.png)
 
+Genotype frequencies of rs2814778 demonstrate strong population differentiation across continental populations, highlighting its utility as a highly informative ancestry marker.
+
+---
+
+### Robust ancestry prediction despite SNP dropout
+
+![SNP Dropout Benchmark](results/figures/figure2_dropout_accuracy.png)
+
+Classification accuracy remains relatively robust despite progressive marker removal, demonstrating the value of highly informative AISNPs in forensic ancestry inference.
 ---
 
 ## Dataset
